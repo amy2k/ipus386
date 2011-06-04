@@ -1,0 +1,118 @@
+ <html>
+                  <head>
+                          <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+                          <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+
+                          <style type="text/css">
+                                  body {
+                                          font-family: sans-serif;
+                                          font-size: 13px;
+                                  }
+
+                                  p {
+                                          font-size: 1em;
+                                          line-height: 1.5em;
+                                          margin-bottom: 15px;
+                                  }                                     
+                                  #items .item .buttons {
+                                          width: 16px;
+                                          display: none;
+                                          float: right;
+                                          background: transparant;
+                                  }
+
+                                  #items .item .buttons li {
+                                          height: 16px;
+                                          width: 16px;
+                                          margin: 1px 1px 0px 0px;
+                                          float:right;
+                                          cursor: pointer;
+                                  }                     
+
+                                  #items .item {
+                                          width: 400px;
+                                          margin: 10px;
+                                          border: 1px dotted #fff;
+                                  }
+
+                                  #items .hover {
+                                          background: #ffe;
+                                          border: 1px dotted #ccc;
+                                  }
+
+                                  #items .item .contents {
+                                          margin: 20px 10px 10px 10px;
+                                  }     
+                          </style>
+
+                          <script src="javascript/jquery-1.2.3.min.js" type="text/javascript"></script>
+                          <script src="javascript/jquery-ui.js" type="text/javascript"></script>
+
+                          <script type="text/javascript">
+                                  $(function() {
+                                          $('#items .item').hover(
+                                                  function() {
+                                                          $(this).addClass('hover');
+                                                          $(this).find('.buttons').show();
+                                                  },
+                                                  function() {
+                                                          $(this).removeClass('hover');
+                                                          $(this).find('.buttons').hide();
+                                                  }
+                                          );
+
+                                          $('#items .item .buttons li').hover(
+                                                  function() {
+                                                          $(this).addClass('ui-state-hover');
+                                                  },
+                                                  function() {
+                                                          $(this).removeClass('ui-state-hover');
+                                                  }
+                                          );
+                                  });
+                          </script>
+
+                          <link
+                  </head>
+                  <body>
+                          <div id="items">
+                                  <div class="item">
+                                          <ul class="buttons">
+                                            <li class="delete ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-close"/>
+                                            </li>
+                                            <li class="config ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-wrench"/>
+                                            </li>
+                                            <li class="info ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-info"/>
+                                            </li>
+                                          </ul>
+                                          <div class='contents'>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu ante. Suspendisse potenti. Praesent vel nisl urna, eu ultricies risus.</p> 
+                                                  <p>Nulla eget mauris ac lectus tempor consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et lacus ipsum.</p> 
+                                                  <p>Donec rhoncus tincidunt magna, sit amet placerat nulla fringilla iaculis.</p>
+                                          </div>
+                                  </div>
+
+                                  <div class="item">
+                                          <ul class="buttons">
+                                            <li class="delete ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-close"/>
+                                            </li>
+                                            <li class="config ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-wrench"/>
+                                            </li>
+                                            <li class="info ui-state-default ui-corner-all">
+                                              <span class="ui-icon ui-icon-info"/>
+                                            </li>
+                                          </ul>
+                                          <div class='contents'>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet arcu ante. Suspendisse potenti. Praesent vel nisl urna, eu ultricies risus.</p> 
+                                                  <p>Nulla eget mauris ac lectus tempor consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et lacus ipsum.</p> 
+                                                  <p>Donec rhoncus tincidunt magna, sit amet placerat nulla fringilla iaculis.</p>
+                                          </div>
+                                  </div>
+                          </div>
+                  </body>
+          </html>

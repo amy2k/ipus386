@@ -1,0 +1,75 @@
+#image_frame{
+    width: 568px;
+    margin: 0 auto 0 auto;       
+}
+
+#image_frame #shadow{
+    width: 568px;    
+    height: 22px;
+    background: url(../images/img_shadow.gif) no-repeat;
+}
+
+#foobar
+{
+	width: 550px;
+	height: 330px;
+	position: relative;
+	border: 1px solid #c5c5c5;
+	padding: 8px;
+	background-color: #fff;
+}
+
+#foobar .navigation
+{
+	position: absolute;
+	display: block;
+	z-index: 100;
+	width: 179px; 
+	height:47px;
+	color: #ffffff;
+	bottom: 20px;
+	right: -8px;
+	margin: 0px;
+	padding: 0px;
+	background: url(../images/bg2.png) no-repeat;
+}
+
+#foobar .navigation a
+{
+	color: #ffffff;
+	text-decoration: none;
+	outline: none;
+}
+
+#foobar .viewer
+{
+	width: 550px;
+	height: 330px;
+}
+
+#foobar .viewer .reel .slide
+{
+	position: relative;
+	width: 550px;
+	height: 330px;
+}
+
+#foobar .viewer .reel .slide span
+{
+	position: absolute;
+	display: block;
+	width: 520px;
+	padding: 20px;
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	bottom: 0px;
+	left: 0px;
+	opacity: .7;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+}
